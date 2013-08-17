@@ -80,7 +80,7 @@ while x:
 	elif cmd == 'x':
 		x=0
 	if (coins>=10) & (random.randrange(0,2)):
-		print(Fore.RED+'\nThe nefarious farmer has arrived and chases you away!'+Fore.WHITE)
+		print(Fore.RED+'\nThe nefarious farmer has arrived and you are severely beaten with a farm implement!'+Fore.WHITE)
 		x=0
 
 print(Fore.WHITE+'\nYay! You collected '+str(coins)+' coins! Go buy a coke!')
