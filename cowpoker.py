@@ -18,13 +18,15 @@ x=1
 moos=0
 coins=0
 
+f=open("nouns.txt",'r')
+
 def cowpoke():
 	#Step 1: Did we succeed in poking the cow?
 	#random.seed()
 	global moos
 	global coins 
 	poked = random.randrange(0,10)
-	print poked
+	#print poked
 	if poked<=4:
 		print(Fore.RED+'The cow mooed!'+Fore.WHITE)
 		moos=moos+1
