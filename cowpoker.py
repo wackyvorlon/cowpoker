@@ -8,7 +8,14 @@ init()
 
 from colorama import Fore, Back, Style
 print(Fore.RED + 'Welcome to CowPoker! ')
-print(Fore.GREEN + 'The only game where you assault a cow!')
+print(Fore.GREEN + '\tThe only game where you assault a cow!')
+
+print(Fore.WHITE+'\n\nYou are standing in an open field.\nBefore you stands a generic cow.\n')
+x=1 
+
+while x:
+	cmd = raw_input(Fore.GREEN +'Do you want to poke the cow? (y/n) '+Fore.WHITE)
+	print cmd
 
 
 
