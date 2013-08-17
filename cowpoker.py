@@ -26,17 +26,18 @@ def cowpoke():
 	poked = random.randrange(0,10)
 	print poked
 	if poked<=4:
-		print('The cow mooed!')
+		print(Fore.RED+'The cow mooed!'+Fore.WHITE)
 		moos=moos+1
 	else:
 	    print('The cow glances over at you, then returns to chewing his cud.')
 	    print('He briefly wonders if you have nothing better to do.')
 	if moos>5:
-		print('The cow gives an unamused stare,\nand promptly coughs up a coin.')
-		print(Fore.BLUE+"It's a golden Roman aureus of the Julio-Claudians,\nminted in 8 BC!"+Fore.WHITE)
+		print('\nThe cow gives an unamused stare,\nand promptly coughs up a coin.')
+		print(Fore.BLUE+"\nIt's a golden Roman aureus of the Julio-Claudians,\nminted in 8 BC!"+Fore.WHITE)
 		if coins==0:
-			print('Someone has been using this cow to smuggle antiquities!')
-		print('I wonder if he has more?')
+			print('\nSomeone has been using this cow to smuggle antiquities!')
+		print('\nI wonder if he has more?')
+		moos=0
 		coins=coins+1
 
 
