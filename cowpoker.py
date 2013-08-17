@@ -15,7 +15,12 @@ x=1
 
 while x:
 	cmd = raw_input(Fore.GREEN +'Do you want to poke the cow? (y/n) '+Fore.WHITE)
-	print cmd
+	if cmd =='y':
+		print('Poked!')
+	elif cmd == 'n':
+		print('Why not?')
+	elif cmd == 'x':
+		quit()
 
 
 
