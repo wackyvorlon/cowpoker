@@ -42,6 +42,7 @@ def cowpoke():
 	    if aggravation>10:
 	    	print("\nNow you've done it!")
 	    	print(Fore.RED+'The cow looks at you, then charges, flattening you on top\nof a large pile of manure.'+Fore.WHITE)
+	    	aggravation=0
 	    	if coins>0:
 	    		print('You dropped your coins, now the cow is standing on them!')
 	    		coins=0
@@ -58,14 +59,15 @@ def feed():
 	#Handles feeding the cow.
 	global aggravation
 	if aggravation>0:
-		aggravation=aggravation-1
-		print(Fore.CYAN+"\nHe's starting to calm down now.")
+		aggravation=aggravation-random.randrange(0,5)
+		print(Fore.CYAN+'\nHe\'s starting to calm down now.'+Fore.WHITE)
+	if aggravation<0:
+		aggravation=0
 
 while x:
 	if coins!=0:
 		print(Style.DIM+'\nYou have '+str(coins)+' coins!'+Style.RESET_ALL)
-	if aggravation!=0:
-		print(Style.DIM+Fore.RED+'\nThe cow has an aggravation level of '+str(aggravation)+'! Be careful!'+Style.RESET_ALL)
+	print(Style.DIM+'\nThe cow has an aggravation level of ['+'*'*aggravation+'-'*(10-aggravation)+']'+Style.RESET_ALL)
 	cmd = raw_input(Fore.GREEN +'Do you want to poke or feed the cow? (p/f) '+Fore.WHITE)
 	if cmd =='p':
 		print('Poked!')
@@ -75,8 +77,11 @@ while x:
 		feed()
 	elif cmd == 'x':
 		x=0
+	if (coins>=10) & (random.randrange(0,2)):
+		print(Fore.RED+'\nThe nefarious farmer has arrived and chases you away!'+Fore.WHITE)
+		x=0
 
-print('\nYay! You collected '+str(coins)+' coins! Go buy a coke!')
+print(Fore.WHITE+'\nYay! You collected '+str(coins)+' coins! Go buy a coke!')
 
 
 
