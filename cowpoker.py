@@ -7,5 +7,8 @@ from colorama import init
 init()
 
 from colorama import Fore, Back, Style
-print(Fore.RED + 'gribblesnarker')
+print(Fore.RED + 'Welcome to CowPoker! ')
+print(Fore.GREEN + 'The only game where you assault a cow!')
+
+
 
