@@ -47,14 +47,18 @@ def cowpoke():
 
 
 while x:
-	cmd = raw_input(Fore.GREEN +'Do you want to poke the cow? (y/n) '+Fore.WHITE)
-	if cmd =='y':
+	if coins!=0:
+		print(Style.DIM+'\nYou have '+str(coins)+' coins!'+Style.RESET_ALL)
+	cmd = raw_input(Fore.GREEN +'Do you want to poke or feed the cow? (p/f) '+Fore.WHITE)
+	if cmd =='p':
 		print('Poked!')
 		cowpoke()
-	elif cmd == 'n':
-		print('Why not?')
+	elif cmd == 'f':
+		print('You give the cow a hand-full of hay.\nHe grunts approvingly then drools on your hand.')
 	elif cmd == 'x':
-		quit()
+		x=0
+
+print('\nYay! You collected '+str(coins)+' coins! Go buy a coke!')
 
 
 
