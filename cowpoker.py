@@ -59,8 +59,10 @@ def feed():
 	#Handles feeding the cow.
 	global aggravation
 	if aggravation>0:
-		aggravation=aggravation-random.randrange(0,5)
-		print(Fore.CYAN+'\nHe\'s starting to calm down now.'+Fore.WHITE)
+		foo=random.randrange(0,5)
+		aggravation=aggravation-foo
+		if foo>0:
+		    print(Fore.CYAN+'\nHe\'s starting to calm down now.'+Fore.WHITE)
 	if aggravation<0:
 		aggravation=0
 
@@ -70,7 +72,7 @@ while x:
 	print(Style.DIM+'\nThe cow has an aggravation level of ['+'*'*aggravation+'-'*(10-aggravation)+']'+Style.RESET_ALL)
 	cmd = raw_input(Fore.GREEN +'Do you want to poke or feed the cow? (p/f) '+Fore.WHITE)
 	if cmd =='p':
-		print('Poked!')
+		print('\nPoked!')
 		cowpoke()
 	elif cmd == 'f':
 		print('You give the cow a hand-full of hay.\nHe grunts approvingly then drools on your hand.')
