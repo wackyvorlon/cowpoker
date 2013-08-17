@@ -34,8 +34,8 @@ def cowpoke():
 		print(Fore.RED+'The cow mooed!'+Fore.WHITE)
 		moos=moos+1
 	else:
-	    print('The cow glances over at you,\nthen returns to chewing his cud and contemplating {noun}.').format(noun=random.choice(words).rstrip())
-	    print('He briefly wonders if you have nothing better to do.')
+	    print('\nThe cow glances over at you,\nthen returns to chewing his cud and contemplating {noun}.').format(noun=random.choice(words).rstrip())
+	    print('\nHe briefly wonders if you have nothing better to do.')
 	if moos>5:
 		print('\nThe cow gives an unamused stare,\nand promptly coughs up a coin.')
 		print(Fore.BLUE+"\nIt's a golden Roman aureus of the Julio-Claudians,\nminted in 8 BC!"+Fore.WHITE)
