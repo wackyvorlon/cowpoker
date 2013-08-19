@@ -36,7 +36,7 @@ def cowpoke():
 		print(Fore.RED+'The cow mooed!'+Fore.WHITE)
 		moos=moos+1
 	else:
-	    print('\nThe cow glances over at you,\nthen returns to chewing his cud and contemplating {noun}.').format(noun=random.choice(words).rstrip())
+	    print('\nThe cow glances over at you, then returns to chewing his cud and contemplating {noun}.').format(noun=random.choice(words).rstrip())
 	    print('\nHe briefly wonders if you have nothing better to do.')
 	    aggravation=aggravation+1
 	    if aggravation>10:
@@ -79,7 +79,7 @@ while x:
 		feed()
 	elif cmd == 'x':
 		x=0
-	if (coins>=10) & (random.randrange(0,2)):
+	if (aggravation>=1) & (random.randrange(0,aggravation)=aggravation):
 		print(Fore.RED+'\nThe nefarious farmer has arrived and you are severely beaten with a farm implement!'+Fore.WHITE)
 		x=0
 
