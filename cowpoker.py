@@ -52,6 +52,7 @@ def cowpoke():
 		if coins==0:
 			print('\nSomeone has been using this cow to smuggle antiquities!')
 		print('\nI wonder if he has more?')
+		#TODO: make it so that number of coins is proportional to aggravation level
 		moos=0
 		coins=coins+1
 
