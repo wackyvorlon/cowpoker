@@ -79,7 +79,8 @@ while x:
 		feed()
 	elif cmd == 'x':
 		x=0
-	if (aggravation>=1) & (random.randrange(0,aggravation)=aggravation):
+	if (aggravation>=1) & (random.randrange(0,10)<aggravation):
+		print(Fore.RED+'\nYou\'ve been heard! RUN!!\n')
 		print(Fore.RED+'\nThe nefarious farmer has arrived and you are severely beaten with a farm implement!'+Fore.WHITE)
 		x=0
 
