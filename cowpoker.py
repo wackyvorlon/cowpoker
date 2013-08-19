@@ -57,6 +57,7 @@ def cowpoke():
 
 def feed():
 	#Handles feeding the cow.
+	#TODO: tweak so that effect of feeding drops as cow is fed more.
 	global aggravation
 	if aggravation>0:
 		foo=random.randrange(0,5)
